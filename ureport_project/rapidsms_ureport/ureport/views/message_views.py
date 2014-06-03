@@ -38,7 +38,8 @@ def messages(request):
     filter_forms = [SearchMessagesForm, DistictFilterMessageForm]
     action_forms = [ReplyTextForm, BlacklistForm2]
     partial_row = 'ureport/partials/messages/message_row.html'
-    base_template = 'ureport/contact_message_base.html'
+    #base_template = 'ureport/contact_message_base.html'
+    base_template = 'ureport_layout.html'
     paginator_template = 'ureport/partials/new_pagination.html'
     columns = [('Text', True, 'text', SimpleSorter()),
                ('Identifier', True, 'connection__pk', SimpleSorter()),
